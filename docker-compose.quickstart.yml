@@ -106,7 +106,7 @@ services:
       # IMPORTANT: If you set OLLAMA_HOST manually, never use 'localhost' or
       #   '127.x.x.x' — use 'host.docker.internal' or a real IP/hostname.
       #   quickstart.sh auto-translates loopback addresses when launching.
-      OLLAMA_HOST:                  ${OLLAMA_HOST:-http://host.docker.internal:11434}
+      OLLAMA_HOST:                  ${OLLAMA_HOST:-http://192.168.0.182:11434}
       PDFIUM_AUTO_CACHE_DIR:        /tmp/edgequake-pdfium-cache
       RUST_LOG:                     ${RUST_LOG:-info}
     extra_hosts:
