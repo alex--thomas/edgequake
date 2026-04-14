@@ -20,7 +20,7 @@ EDGEQUAKE_VERSION="${EDGEQUAKE_VERSION:-latest}"
 EDGEQUAKE_PORT="${EDGEQUAKE_PORT:-8080}"
 FRONTEND_PORT="${FRONTEND_PORT:-3000}"
 COMPOSE_FILE="${COMPOSE_FILE:-docker-compose.quickstart.yml}"
-RAW_BASE="https://raw.githubusercontent.com/raphaelmansuy/edgequake/edgequake-main"
+RAW_BASE="https://raw.githubusercontent.com/alex--thomas/edgequake/edgequake-main"
 
 # Runtime state — populated by wizard, never read from env
 LLM_PROVIDER=""
@@ -53,7 +53,7 @@ fi
 ui_banner() {
   printf "\n${C_BOLD}${C_BLUE}"
   printf "  ╔══════════════════════════════════════════════╗\n"
-  printf "  ║   EdgeQuake Setup Wizard    %-16s║\n" "v${EDGEQUAKE_VERSION}"
+  printf "  ║   EdgeQuake Alex Setup Wizard    %-16s║\n" "v${EDGEQUAKE_VERSION}"
   printf "  ╚══════════════════════════════════════════════╝\n"
   printf "${C_RESET}\n"
 }
